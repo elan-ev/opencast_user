@@ -1,0 +1,14 @@
+---
+# Ensure the opencast user has the same uid/gid
+# so we don't run into problems on the shared file system
+
+- name: create group opencast
+  group:
+    name: opencast
+    gid: 7967
+
+- name: create user opencast
+  user:
+    name: opencast
+    uid: 7967
+    group: opencast
