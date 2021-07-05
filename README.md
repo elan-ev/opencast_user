@@ -1,7 +1,7 @@
 Ansible: Opencast User Role
 ===========================
 
-This Ansible role creates an Opencast user Linux with a specific user and group
+This Ansible role creates an Opencast Linux user with a specific user and group
 id to ensure they are identical on the whole cluster.
 
 
