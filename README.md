@@ -13,7 +13,7 @@ Example of how to use the role:
 ```yaml
 - hosts: servers
   roles:
-    - role: lkiesow.opencast_user
+    - role: elan.opencast_user
 ```
 
 

@@ -3,7 +3,8 @@
 galaxy_info:
   author: Lars Kiesow
   role_name: opencast_user
-  namespace: lkiesow
+  namespace: elan
+  company: ELAN e.V.
   description: Create Opencast system user
   license: BSD-3-Clause
   min_ansible_version: 2.9
