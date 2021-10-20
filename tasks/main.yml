@@ -12,3 +12,4 @@
     name: opencast
     uid: 7967
     group: opencast
+    create_home: false
