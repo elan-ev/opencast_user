@@ -4,12 +4,12 @@
 
 - name: create group opencast
   group:
-    name: opencast
-    gid: 7967
+    name: '{{ opencast_user_name }}'
+    gid: '{{ opencast_gid }}'
 
 - name: create user opencast
   user:
-    name: opencast
-    uid: 7967
-    group: opencast
+    name: '{{ opencast_user_name }}'
+    uid: '{{ opencast_uid }}'
+    group: '{{ opencast_group_name }}'
     create_home: false

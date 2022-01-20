@@ -1,0 +1,6 @@
+---
+
+opencast_user_name: opencast
+opencast_group_name: opencast
+opencast_uid: 7967
+opencast_gid: 7967
