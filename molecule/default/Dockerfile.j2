@@ -1,0 +1,4 @@
+FROM {{ item.image }}
+
+# Install dependencies
+RUN dnf upgrade -y && dnf install -y sudo python39
