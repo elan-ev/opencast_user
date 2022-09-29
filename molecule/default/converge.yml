@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include opencast_user"
-      include_role:
+    - name: Include opencast_user
+      ansible.builtin.include_role:
         name: "opencast_user"

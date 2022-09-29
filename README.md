@@ -1,6 +1,8 @@
 Ansible: Opencast User Role
 ===========================
 
+![molecule](https://github.com/elan-ev/opencast_user/actions/workflows/molecule.yml/badge.svg)
+
 This Ansible role creates an Opencast Linux user with a specific user and group
 id to ensure they are identical on the whole cluster.
 
