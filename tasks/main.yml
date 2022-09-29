@@ -2,14 +2,14 @@
 # Ensure the opencast user has the same uid/gid
 # so we don't run into problems on the shared file system
 
-- name: create group opencast
-  group:
-    name: '{{ opencast_user_name }}'
-    gid: '{{ opencast_gid }}'
+- name: Create group opencast
+  ansible.builtin.group:
+    name: "{{ opencast_user_name }}"
+    gid: "{{ opencast_gid }}"
 
-- name: create user opencast
-  user:
-    name: '{{ opencast_user_name }}'
-    uid: '{{ opencast_uid }}'
-    group: '{{ opencast_group_name }}'
+- name: Create user opencast
+  ansible.builtin.user:
+    name: "{{ opencast_user_name }}"
+    uid: "{{ opencast_uid }}"
+    group: "{{ opencast_group_name }}"
     create_home: false
