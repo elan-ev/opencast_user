@@ -4,12 +4,23 @@ Ansible: Opencast User Role
 ![molecule](https://github.com/elan-ev/opencast_user/actions/workflows/molecule.yml/badge.svg)
 
 This Ansible role creates an Opencast Linux user with a specific user and group
-id to ensure they are identical on the whole cluster.
+ID to ensure they are identical on the whole cluster.
 
 Role Variables
 --------------
 
-Have a look at the [defaults](defaults/main.yml) to see variables you can configure.
+- `opencast_user_name`
+  - The username of the user to create
+  - Defaults: `opencast`
+- `opencast_user_group_name`
+  - The group name of the user
+  - Defaults: `opencast`
+- `opencast_user_uid`
+  - The user ID
+  - Defaults: `7967`
+- `opencast_user_gid`
+  - The users group ID
+  - Defaults: `7967`
 
 Example Playbook
 ----------------
@@ -26,4 +37,9 @@ Example of how to use the role:
 License
 -------
 
-BSD
+[BSD-3-Clause](LICENSE)
+
+Author Information
+------------------
+
+[ELAN e.V](https://elan-ev.de/)
