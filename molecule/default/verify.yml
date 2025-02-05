@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Check user exists
-    ansible.builtin.command:  # noqa no-changed-when
-      cmd: id opencast
+    - name: Check user exists
+      ansible.builtin.command:  # noqa no-changed-when
+        cmd: id opencast

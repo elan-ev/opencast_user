@@ -1,8 +1,0 @@
-FROM {{ item.image }}
-
-# Install dependencies
-{% if "centos" in item.name %}
-RUN dnf install --refresh -y sudo systemd bash ca-certificates iproute python3 python3-libselinux
-{% else %}
-RUN apt-get update && apt-get install -y sudo bash ca-certificates iproute2 init python3 && apt-get clean
-{% endif %}
