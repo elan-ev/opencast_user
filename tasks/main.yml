@@ -4,12 +4,12 @@
 
 - name: Create group opencast
   ansible.builtin.group:
-    name: "{{ opencast_user_name }}"
-    gid: "{{ opencast_gid }}"
+    name: "{{ opencast_user_group_name }}"
+    gid: "{{ opencast_user_gid }}"
 
 - name: Create user opencast
   ansible.builtin.user:
     name: "{{ opencast_user_name }}"
-    uid: "{{ opencast_uid }}"
-    group: "{{ opencast_group_name }}"
+    uid: "{{ opencast_user_uid }}"
+    group: "{{ opencast_user_group_name }}"
     create_home: false

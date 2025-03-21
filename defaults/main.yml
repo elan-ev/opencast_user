@@ -1,5 +1,9 @@
 ---
+# The username of the user to create
 opencast_user_name: opencast
-opencast_group_name: opencast
-opencast_uid: 7967
-opencast_gid: 7967
+# The group name of the user
+opencast_user_group_name: opencast
+# The user ID
+opencast_user_uid: 7967
+# The users group ID
+opencast_user_gid: 7967
